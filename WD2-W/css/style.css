@@ -1,0 +1,539 @@
+body {
+  font-size: 16px;
+  color: #555;
+  margin: 0;
+  padding: 0;
+}
+#page {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  background-color: skyblue;
+}
+
+h1 {
+  margin: 0 0 1em 0;
+  font-size: 2.8em;
+}
+h2 {
+  margin: 0 0 1em 0;
+  font-size: 2em;
+}
+h3 {
+  margin: 0 0 1em 0;
+  font-size: 1.3em;
+}
+p {
+  margin: 0 0 1em 0;
+}
+a {
+  color: #007eff;
+}
+a:visited {
+  color: #65b1ff;
+}
+
+/* ----------- Header Style ----------- */
+header {
+  height: 400px;
+  background: url(../images/Header.jpg) no-repeat center bottom;
+  position: relative;
+  background-size: 1200px 500px;
+}
+img {
+  height: 80px;
+  top: 10px;
+  left: 10px;
+  position: absolute;
+  display: block;
+}
+
+header a.logo {
+  position: absolute;
+  display: block;
+  height: 80px;
+  width: 110px;
+  top: 10px;
+  left: 10px;
+}
+header a.logo span {
+  display: none;
+}
+/*rules*/
+section {
+  padding: 0 30px;
+}
+section::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* ----------- Page Content Style ----------- */
+section.content .box {
+  padding-top: 80px;
+  padding-bottom: 30px;
+  color: grey;
+}
+section.content .box p {
+  padding-left: 50px;
+}
+section.content .box p.C {
+  padding-left: 50px;
+  width: 60%;
+}
+section.content .box p.M {
+  padding-left: 50px;
+  width: 40%;
+}
+
+/* ----------- Caption Style ----------- */
+section.caption {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding: 0;
+}
+section.caption aside {
+  width: 33%;
+  float: left;
+  text-align: center;
+}
+section.caption .content {
+  margin: 15px;
+  background: no-repeat center top;
+  background-size: 75px 75px;
+  padding-top: 85px;
+}
+section.caption .contentA {
+  margin: 15px;
+}
+section.captionC aside {
+  width: 40%;
+  right: 0.01em;
+  top: 450px;
+  text-align: center;
+  position: absolute;
+}
+section.captionC .content {
+  margin: 15px;
+  background: no-repeat center top;
+  background-size: 150px;
+  padding-top: 160px;
+}
+section.captionM aside {
+  width: 50%;
+  right: 1em;
+  top: 450px;
+  text-align: center;
+  position: absolute;
+}
+section.captionM .content {
+  margin: 0;
+  background: no-repeat center top;
+  background-size: 100%;
+  padding-top: 100%;
+}
+/*images*/
+section.caption aside .content.aboutUs {
+  background-image: url(../images/about_us.png);
+  border: solid;
+}
+section.caption aside .content.ceo {
+  background-image: url(../images/ceo.png);
+  border: solid;
+}
+section.caption aside .content.service {
+  background-image: url(../images/service.png);
+  border: solid;
+}
+section.captionC aside .content.CEO {
+  background-image: url(../images/ceo_face.png);
+  border: none;
+}
+section.captionM aside .content.map {
+  background-image: url(../images/location.png);
+  border: none;
+}
+
+a.contentBox {
+  font-size: 1.2em;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 4px 15px;
+  transition: background-color 0.5s;
+}
+a.contentBox:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/* ----------- Nav ----------- */
+nav {
+  background-color: rgba(0, 0, 0, 0.65);
+  position: absolute;
+  top: 400px;
+  left: 0px;
+  width: 100%;
+  text-align: center;
+}
+nav::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0px;
+}
+nav ul li a {
+  display: inline-block;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  width: 125px;
+  position: relative;
+}
+nav ul li:hover {
+  background-color: black;
+}
+nav ul li a:visited {
+  color: white;
+}
+nav ul li a:hover {
+  background-color: #0e365f;
+}
+nav ul ul {
+  position: absolute;
+  top: 100%;
+  background: black;
+  display: none;
+}
+nav ul li:hover > ul {
+  display: block;
+}
+nav ul ul li {
+  position: relative;
+}
+
+nav > ul > li {
+  float: left;
+}
+
+#hamburger {
+  display: none;
+}
+img.burger {
+  width: 0px;
+}
+/* ----------- Footer ----------- */
+footer {
+  font-size: 0.8em;
+  margin: 0;
+  color: #999;
+  padding: 20px;
+  background-color: rgb(224, 224, 235);
+}
+footer .content {
+  display: inline;
+}
+footer a {
+  margin-left: 30px;
+  color: #777;
+}
+footer a:visited {
+  color: #777;
+}
+footer a:hover {
+  color: #777;
+}
+/* ------- Label and Input -----------*/
+.ServiceS input {
+  width: 40vw;
+  max-width: 540px;
+  margin: 10px;
+  margin-left: 20%;
+}
+.ServiceS {
+  display: block;
+  margin: 10px 10%;
+  overflow: hidden;
+}
+label {
+  display: block;
+  margin-left: 10%;
+}
+.button {
+  overflow: hidden;
+}
+.button button {
+  float: right;
+  margin: 10px;
+  margin-right: 15vw;
+  width: 200px;
+}
+input::-webkit-input-placeholder {
+  opacity: 0; /*Change the opacity between 0 and 1*/
+}
+
+/* ----------- Mobile View ----------- */
+
+@media screen and (max-width: 425px) {
+  #page {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    margin: 0 0 0 0;
+    position: relative;
+    background-color: skyblue;
+    overflow-x: hidden;
+  }
+  h1 {
+    margin: 0 0 0.2em 0;
+    font-size: 2em;
+  }
+  h3 {
+    margin: 0 0 1em 0;
+    font-size: 1.3em;
+  }
+  p {
+    margin: 0 0 0.5em 0;
+  }
+  a {
+    color: #007eff;
+  }
+  a:visited {
+    color: #65b1ff;
+  }
+  a:hover {
+    color: red;
+  }
+  /* header */
+  header {
+    height: 80px;
+    background: none;
+    background-color: darkblue;
+  }
+  img {
+    height: 50px;
+    left: 5em;
+  }
+  header a.logo {
+    position: absolute;
+    display: block;
+    height: 33px;
+    width: auto;
+    top: 30px;
+    left: 10em;
+  }
+  header a.logo span {
+    display: block;
+    text-decoration: none;
+    font-size: 1.6em;
+  }
+
+  /* Content */
+  section.content .box {
+    padding-top: 0;
+    padding-bottom: 0;
+    color: grey;
+  }
+  section.content .box p {
+    padding-left: 0;
+  }
+  /* Caption */
+  section.caption aside {
+    width: 100%;
+    float: left;
+    text-align: left;
+  }
+  section.captionC aside {
+    width: 150px;
+    right: 0;
+    top: 0;
+    text-align: center;
+    position: relative;
+  }
+  section.captionC .content {
+    margin: 15px auto;
+    background: no-repeat center top;
+    background-size: 100px;
+    padding-top: 110px;
+  }
+  section.captionM aside {
+    width: 0;
+    right: 0;
+    top: 0;
+    text-align: center;
+    position: relative;
+    display: none;
+  }
+  section.captionM .content {
+    margin: 0;
+    background: no-repeat center top;
+    background-size: 0;
+    padding-top: 0;
+  }
+  /*section.caption aside p{display: none;}*/
+  section.caption aside .content.aboutUs {
+    border: none;
+    float: left;
+  }
+  section.caption aside .content.ceo {
+    border: none;
+    float: left;
+  }
+  section.caption aside .content.service {
+    border: none;
+    float: left;
+  }
+  /* Nav/ Hamburger */
+  #hamburger {
+    background-color: red;
+    border: none;
+    opacity: 0.6;
+    transition: 0.3s;
+  }
+  #hamburger:hover{
+    background-color:red;
+    opacity:1
+  }
+  img.burger {
+    width: 50px;
+    left: 10px;
+    top: 10px;
+  }
+  ul {
+    margin-top: 0.1em;
+    padding-left: 0;
+    width: 10em;
+    border: 2px black;
+    box-shadow: 0.4em 0.4em 0.4em darkgray;
+  }
+  a {
+    display: block;
+    color: #007eff;
+    text-decoration: none;
+    padding: 0.1em 0.5em;
+  }
+  li {
+    color: black;
+    list-style-type: none;
+  }
+  a:hover {
+    color: white;
+    background-color: black;
+  }
+  #hamburger:checked ~ nav {
+    display: block;
+  }
+  nav {
+    display: none;
+  }
+
+  nav {
+    background-color: black;
+    position: absolute;
+    top: 80px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+  }
+  nav::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0px;
+  }
+  nav ul li a {
+    display: block;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    width: auto;
+    position: relative;
+  }
+  nav ul li:hover {
+    background-color: black;
+  }
+  nav ul li a:visited {
+    color: white;
+  }
+  nav ul li a:hover {
+    background-color: #0e365f;
+  }
+  nav ul ul {
+    position: absolute;
+    top: 100%;
+    background: black;
+    display: none;
+  }
+  nav ul li:hover > ul {
+    display: block;
+  }
+  nav ul ul li {
+    position: relative;
+  }
+
+  nav > ul > li {
+    float: left;
+  }
+
+  /* Footer */
+  footer::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  footer div.content a {
+    display: inline-block;
+    margin: 0 0 10px 0;
+    clear: both;
+  }
+
+  /* label */
+  .ServiceS input {
+    width: 80%;
+  }
+  .ServiceS {
+    display: block;
+    margin: 10px 10%;
+  }
+  /*label{display: none}*/
+  .button {
+    display: block;
+    margin: 10px 10%;
+  }
+  .button button {
+    width: 80%;
+  }
+  input::-webkit-input-placeholder {
+    opacity: 1; /*Change the opacity between 0 and 1*/
+  }
+  .ServiceS input {
+    width: 80vw;
+    max-width: 100%;
+    margin: 5px;
+    margin-left: 0;
+  }
+  .ServiceS {
+    display: block;
+    margin: 5px 10%;
+    overflow: hidden;
+  }
+  .ServiceS label {
+    display: none;
+    margin-left: 0;
+  }
+  .button {
+    overflow: hidden;
+  }
+  .button button {
+    float: right;
+    margin: 10px;
+    margin-right: 0;
+    width: 80vw;
+  }
+}
